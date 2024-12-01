@@ -3,7 +3,7 @@ async function loadRanking() {
     const leaderboardElement = document.getElementById('leaderboard');
     
     try {
-        const response = await fetch(`/api/ranking/${rankingId}`);
+        const response = await fetch(`/.netlify/functions/api/ranking/${rankingId}`);
         if (!response.ok) {
             throw new Error('Ranking not found');
         }
