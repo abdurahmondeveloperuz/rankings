@@ -3,8 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Student Rankings - View and compare student performance scores">
-    <meta name="theme-color" content="#4f46e5">
     <title>Student Rankings</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
     <link rel="stylesheet" href="/css/style.css">
@@ -12,16 +10,16 @@
 <body>
     <div class="container">
         <h1>Student Rankings</h1>
-        <main id="leaderboard" class="leaderboard" role="main">
-            <div class="loading" role="status" aria-live="polite">
-                <svg class="animate-spin h-8 w-8 text-primary" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true">
+        <div id="leaderboard" class="leaderboard">
+            <div class="loading">
+                <svg class="animate-spin h-8 w-8 text-primary" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
                     <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
                     <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
                 </svg>
                 <p>Loading rankings...</p>
             </div>
-        </main>
+        </div>
     </div>
-    <script src="/js/rankings.js" defer></script>
+    <script src="/js/rankings.js"></script>
 </body>
 </html>
